@@ -1,0 +1,56 @@
+/* =========================================
+   TABLETS
+   ========================================= */
+
+@media (min-width: 600px) {
+
+    .home-container {
+        max-width: 500px;
+    }
+
+}
+
+
+/* =========================================
+   ESCRITORIO
+   ========================================= */
+
+@media (min-width: 1024px) {
+
+    .screen-home {
+        padding: 40px;
+    }
+
+    .home-container {
+        max-width: 520px;
+    }
+
+}
+
+
+/* =========================================
+   CELULARES PEQUEÑOS
+   ========================================= */
+
+@media (max-width: 400px) {
+
+    .screen-home {
+        padding: var(--spacing-md);
+    }
+
+
+    .home-card {
+        padding: var(--spacing-lg);
+    }
+
+
+    .secondary-navigation {
+        gap: var(--spacing-md);
+    }
+
+
+    .secondary-button {
+        font-size: 0.75rem;
+    }
+
+}

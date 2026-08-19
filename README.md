@@ -10,4 +10,4 @@ Juego web multijugador basado en el clásico juego Tutti Frutti.
 
 ## Estado
 
-En desarrollo.
+🚧 En desarrollo.

@@ -1,0 +1,108 @@
+/* =========================================
+   BOTONES
+   ========================================= */
+
+.button {
+
+    border: none;
+
+    border-radius: var(--border-radius-medium);
+
+    padding: 13px 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: var(--spacing-sm);
+
+    font-family: inherit;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+
+}
+
+
+/* =========================================
+   BOTÓN PRINCIPAL
+   ========================================= */
+
+.button-primary {
+
+    background-color: var(--color-primary);
+
+    color: var(--color-text-light);
+
+    box-shadow:
+        0 6px 15px rgba(108, 59, 209, 0.3);
+
+}
+
+
+.button-primary:hover {
+
+    background-color: var(--color-primary-dark);
+
+    transform: translateY(-2px);
+
+}
+
+
+.button-primary:active {
+
+    transform: translateY(0);
+
+}
+
+
+/* =========================================
+   BOTÓN SECUNDARIO
+   ========================================= */
+
+.button-secondary {
+
+    background-color: #eeeeee;
+
+    color: var(--color-text);
+
+}
+
+
+.button-secondary:hover {
+
+    background-color: #e0e0e0;
+
+}
+
+
+/* =========================================
+   TAMAÑOS
+   ========================================= */
+
+.button-large {
+
+    width: 100%;
+
+    min-height: 54px;
+
+    font-size: 1.1rem;
+
+}
+
+
+.button-icon {
+
+    font-size: 1.3rem;
+
+}

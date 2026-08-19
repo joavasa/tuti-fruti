@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Permite que la interfaz se adapte correctamente a celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Tutti Frutti - Juego de palabras multijugador"
+    >
+
+    <title>Tutti Frutti</title>
+
+    <!-- CSS general -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- CSS de componentes -->
+    <link rel="stylesheet" href="./css/components.css">
+
+    <!-- CSS responsive -->
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         APLICACIÓN
+         ========================= -->
+    <main id="app">
+
+        <!-- =========================
+             PANTALLA 1 - INICIO
+             ========================= -->
+        <section
+            id="screen-home"
+            class="screen screen-home active"
+            aria-labelledby="game-title"
+        >
+
+            <div class="home-container">
+
+                <!-- Logo / título -->
+                <header class="home-header">
+
+                    <div class="game-logo" aria-label="Tutti Frutti">
+                        <span class="logo-tutti">TUTTI</span>
+                        <span class="logo-frutti">FRUTTI</span>
+                    </div>
+
+                    <p class="game-subtitle">
+                        ¡Pon a prueba tus conocimientos!
+                    </p>
+
+                </header>
+
+
+                <!-- Formulario de inicio -->
+                <div class="home-card">
+
+                    <div class="form-group">
+
+                        <label for="player-name">
+                            Tu nombre
+                        </label>
+
+                        <input
+                            type="text"
+                            id="player-name"
+                            name="player-name"
+                            class="input"
+                            placeholder="Escribe tu nombre"
+                            maxlength="20"
+                            autocomplete="off"
+                        >
+
+                        <small
+                            id="name-error"
+                            class="form-error"
+                            aria-live="polite"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- Botón principal -->
+                    <button
+                        id="play-button"
+                        class="button button-primary button-large"
+                        type="button"
+                    >
+                        <span class="button-icon" aria-hidden="true">
+                            🎮
+                        </span>
+
+                        JUGAR
+                    </button>
+
+                </div>
+
+
+                <!-- Acciones secundarias -->
+                <nav
+                    class="secondary-navigation"
+                    aria-label="Opciones adicionales"
+                >
+
+                    <button
+                        type="button"
+                        class="secondary-button"
+                        data-action="how-to-play"
+                    >
+                        <span class="secondary-icon" aria-hidden="true">
+                            ❓
+                        </span>
+
+                        <span>Cómo jugar</span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="secondary-button"
+                        data-action="ranking"
+                    >
+                        <span class="secondary-icon" aria-hidden="true">
+                            🏆
+                        </span>
+
+                        <span>Ranking</span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="secondary-button"
+                        data-action="settings"
+                    >
+                        <span class="secondary-icon" aria-hidden="true">
+                            ⚙️
+                        </span>
+
+                        <span>Configuración</span>
+                    </button>
+
+                </nav>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PANTALLA 2 - TEMPORAL
+             ========================= -->
+
+        <!--
+
+        Esta pantalla es solamente un marcador temporal.
+        La implementaremos posteriormente.
+
+        -->
+
+        <section
+            id="screen-game-mode"
+            class="screen screen-placeholder"
+            
+        >
+
+            <div class="placeholder-card">
+
+                <h2>
+                    ¿Qué quieres hacer?
+                </h2>
+
+                <p>
+                    Pantalla 2 en desarrollo.
+                </p>
+
+                <button
+                    type="button"
+                    id="back-home-button"
+                    class="button button-secondary"
+                >
+                    ← Volver
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript principal -->
+    <script
+        type="module"
+        src="./js/app.js"
+    ></script>
+
+</body>
+
+</html>
